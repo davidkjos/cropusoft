@@ -1,0 +1,28 @@
+<calendar>
+	<months>
+		<month value="0" name="January" days="31" start="5" />
+		<month value="1" name="February" days="28" start="1"/>
+		<month value="2" name="March" days="31" start="1"/>
+		<month value="3" name="April" days="30" start="4"/>
+		<month value="4" name="May" days="31" start="6"/>
+		<month value="5" name="June" days="30" start="2"/>
+		<month value="6" name="July" days="31" start="4" />
+		<month value="7" name="August" days="31" start="0" />
+		<month value="8" name="September" days="30" start="3" />
+		<month value="9" name="October" days="31" start="5" />
+		<month value="10" name="November" days="30" start="1" />
+		<month value="11" name="December" days="31" start="3" />
+	</months>
+	<template>
+	<![CDATA[
+		<table id="calendar_table" class="calendar_table">
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		</table>
+	]]>
+	</template>
+</calendar>

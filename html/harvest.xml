@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<harvest-form>
+	<select-fields-form>
+		<![CDATA[
+			Please select the fields you will be harvesting.
+			<div id="selected_fields" class="hide"><b>Selections: </b><br/>
+			<table class="form_table small_font">
+			<tr id="total_acres_tr" class="border_top"><td>Total:</td><td class="border_top"></td></tr>
+			</table>
+			</div>
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-fields-form>
+	<select-date-form>
+		<![CDATA[
+			Please select the harvest date.
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-date-form>
+	<enter-amount-form>
+		<![CDATA[
+			Please enter the average yield from the harvest. <br/>
+			<input type="text" name="rate" class="short_input"></input>Bushels/Acre<br/>
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-amount-form>
+	<enter-description-form>
+		<![CDATA[
+			Please enter a description of this harvest for future reference. <br/>
+			 <input type="text"></input><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+			]]>
+	</enter-description-form>
+	<confirm-form>
+		<![CDATA[
+			Please review your entries and then save. 
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</confirm-form>
+</harvest-form>

@@ -1,0 +1,22 @@
+#welcome_header {
+	position:absolute;
+	background-color: #12D017;
+	left:45%;
+	top:5%;
+}
+body {
+	background-color: #1AA02C
+}
+#signin_form {
+	position:absolute;
+	background-color: #72D017;
+	left:45%;
+	top:40%;
+}
+#signup_form {
+	position:absolute;
+	background-color: #72D017;
+	left:45%;
+	top:40%;
+	display: none;
+}

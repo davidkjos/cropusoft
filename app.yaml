@@ -1,0 +1,15 @@
+application: cropusoft
+version: 3
+runtime: python
+api_version: 1
+
+handlers:
+- url: /yup/
+  static_files: html/index.htm
+  upload: html/index.htm
+
+- url: /html
+  static_dir: html
+
+- url: /.*
+  script: cropusoft.py

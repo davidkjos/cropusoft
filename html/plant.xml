@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plant-form>
+	<select-fields-form>
+		<![CDATA[
+			Please select the fields you will be planting on.
+			<div id="selected_fields" class="hide"><b>Selections: </b><br/>
+			<table class="form_table small_font">
+			<tr id="total_acres_tr" class="border_top"><td>Total:</td><td class="border_top"></td></tr>
+			</table>
+			</div>
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-fields-form>
+	<select-date-form>
+		<![CDATA[
+			Please select the planting date.
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-date-form>
+	<select-crop-form>
+		<![CDATA[
+			Please select the crop you will be planting. <br/>
+			<input type="radio" name="plant_crop_type" value="corn">Corn</input>
+			<input type="radio" name="plant_crop_type" value="wheat">Wheat</input>
+			<input type="radio" name="plant_crop_type" value="soybean">Soybean</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-crop-form>
+	<select-seed-form>
+		<![CDATA[
+			Please select the seed you will be using. <br/>
+			<span id="options">options<span>
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-seed-form> 
+	<treatment-form>
+		<![CDATA[
+			Please enter the treatment to be used. <br/>
+			Treatment: <input type="text" class="short_input"></input>
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" /><span id="none">No treatment</span>
+		]]>
+	</treatment-form>
+	<treatment-amount-form>
+		<![CDATA[
+			Please enter the amount. <br/>
+			Treatment Amount: <input type="text" class="short_input"></input>
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</treatment-amount-form>
+	<treatment-price-form>
+		<![CDATA[
+			Please enter the treatment price. <br/>
+			$<input type="text" class="short_input"></input> Oz/Acre
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</treatment-price-form>
+	<enter-amount-form>
+		<![CDATA[
+			Please enter the amount of seed you will be using. <br/>
+			<input type="radio" name="unit_amount" value="kernal"></input>Kernals Per Acre: <input type="text" name="kernal_rate" class="short_input"></input><br/>
+			<input type="radio" name="unit_amount" value="unit"></input><span></span> Per Acre: <input type="text" name="unit_rate" class="short_input"></input><br/>
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-amount-form>
+	<enter-description-form>
+		<![CDATA[
+			Please enter a description of this planting for future reference. <br/>
+			 <input type="text"></input><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+			]]>
+	</enter-description-form>
+	<confirm-form>
+		<![CDATA[
+			Please review your entries and then save. 
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</confirm-form>
+	<view-planting>
+		<![CDATA[
+		<span><b>Description: </b><span id="description"></span>
+		<br/><b>Crop: </b><span id="crop"></span>
+		<br/><b>Seed: </b><span id="seed"></span>
+		<br/><b>Amount: </b><span id="total"></span> <span id="units"></span>
+		<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="delete" src="buttons/delete.png" >
+		]]>
+	</view-planting>
+</plant-form>

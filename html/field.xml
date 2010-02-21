@@ -1,0 +1,24 @@
+<field-form>
+	<section-selection-form>
+		<![CDATA[
+		<div id="section_selection_form" class="import_form">
+			Please select a farm and section below the map or enter new info here:
+			<br/>Farm: <input name="farm" type="text" maxlength="8" ></input>
+			<br/>Section: <input name="number" class="two_char_input" type="text" maxlength="2" ></input>-N<input  class="two_char_input" name="north" type="text" maxlength=3  ></input>-W<input  class="two_char_input" name="west" type="text" maxlength="3"  ></input>
+			</select>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="next" src="buttons/next.png" />
+		</div>
+		]]>
+	</section-selection-form>
+		<new-field-form>
+		<![CDATA[
+		<div id="new_field_form" class="import_form">
+			Field Name: <input name="field_name_input" type="text" maxlength="30" ></input> 
+			<br/>5-Year Average Yield  (Leave blank if unapplicable, can be changed later): 
+			<br/>Corn: <input class="shorter_input" name="corn_avg_input" type="text"></input> Soybeans:<input class="shorter_input" name="soybean_avg_input" type="text"></input> Wheat:<input class="shorter_input" name="wheat_avg_input" type="text"></input>
+			<br/><img id="cancel" src="buttons/cancel.png"><img id="next" src="buttons/next.png" />
+		</div>
+		]]>
+	</new-field-form>
+
+</field-form>

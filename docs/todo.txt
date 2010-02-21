@@ -1,0 +1,75 @@
+STORAGE
+
+1 enter the crop type
+
+2
+Select where grain is being moved from.
+ON FARM
+
+3
+Select where grain is being moved to.
+Location: [text]
+
+4
+Enter the bushels to be moved
+[Text] (up to 123 bushels)
+
+5
+Enter the date when movement is happening
+[map]
+
+6
+Confirm entries
+
+
+SALES
+1
+Enter crop type
+
+2
+Select location of grain to be sold
+
+3
+Enter the vendor name
+
+4
+Enter the amount of bushels to be sold
+
+5 
+Enter sales price
+
+6
+Enter Per bushel Deduction (dockage/tax/etc)
+
+7
+Enter the date of sales
+
+8
+Confirm Entries
+
+
+INDIRECT COSTS
+1
+Enter/Select Type (payroll, fuel, maintenance, RE tax)
+2
+Enter Date of payment
+3
+Enter Amount
+4
+Enter Vendor
+5
+Enter description
+
+INDIRECT INCOME
+1
+Enter/Select Type (for hire, storage, rent)
+2 
+Enter Date of collection
+3
+Enter Amount
+4 
+Enter Vendor
+5
+Enter description
+
+

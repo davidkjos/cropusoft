@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chemical-form>
+	<select-fields-form>
+		<![CDATA[
+			Please select the fields you will be applying chemicals on.
+			<div id="selected_fields" class="hide"><b>Selections: </b><br/>
+			<table class="form_table small_font">
+			<tr id="total_acres_tr" class="border_top"><td>Total:</td><td class="border_top"></td></tr>
+			</table>
+			</div>
+			<img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-fields-form>
+	<select-date-form>
+		<![CDATA[
+			Please select the spray date.
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-date-form>
+	<select-crop-form>
+		<![CDATA[
+			Please select the crop you will be planting. <br/>
+			<input type="radio" name="plant_crop_type" value="corn">Corn</input>
+			<input type="radio" name="plant_crop_type" value="wheat">Wheat</input>
+			<input type="radio" name="plant_crop_type" value="soybean">Soybean</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-crop-form>
+	<select-product-form>
+		<![CDATA[
+			Please select the chemical you will be using. <br/>
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-product-form>
+	<enter-amount-form>
+		<![CDATA[
+			Please enter the amount of chemical per acre you will be using. <br/>
+			<span class='units'></span> Per Acre(up to <span id="acre_total" ></span> <span class='units'></span>)): <input type="text" name="rate" class="short_input"></input><br/>
+			<img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-amount-form>
+	<enter-description-form>
+		<![CDATA[
+			Please enter a description of this planting for future reference. <br/>
+			 <input type="text"></input><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+			]]>
+	</enter-description-form>
+	<confirm-form>
+		<![CDATA[
+			Please review your entries and then save. 
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</confirm-form>
+</chemical-form>

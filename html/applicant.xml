@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<payment-form>
+	<select-farm-form>
+		<![CDATA[
+			Select farm this payment is related to.
+			<br/><input type="radio" name="farm" value="1281">1281</input>
+			<br/><input type="radio" name="farm" value="296">296</input>
+			<br/><input type="radio" name="farm" value="904">904</input>
+			<br/><input type="radio" name="farm" value="512">512</input>
+			<br/><input type="radio" name="farm" value="512">Does Not Apply</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-farm-form>
+	<select-classification-form>
+		<![CDATA[
+		Please Classify the payment.
+		<br/><input type="radio" value="Payroll">Payroll</input>
+		<br/><input type="radio" value="Payroll">Maintenance</input>
+		<br/><input type="radio" value="Real Estate Tax">Real Estate Tax</input>
+		<br/><input type="radio" value="Fuel">Fuel</input>
+		<br/><input type="radio" value="new">Add New Classification</input><span></span>
+		<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-classification-form>	
+	<enter-vendor-form>
+		<![CDATA[
+			Select Vendor Name
+			<br/><input type="radio" value="Bill Johnson">Bill Johnson</input>
+			<br/><input type="radio" value="Township Board">Township Board</input>
+			<br/><input type="radio" value="new">Add New Vendor</input><span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-vendor-form>
+	<select-date-form>
+		<![CDATA[
+			Please select the payment date.
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-date-form>
+	<enter-amount-form>
+		<![CDATA[
+			Enter Payment.
+			<br/>$<input type="text"></input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-amount-form>
+	<enter-description-form>
+		<![CDATA[
+			Please enter a description of this payment for future reference. <br/>
+			 <input type="text"></input>
+			 <br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+			]]>
+	</enter-description-form>
+	<confirm-form>
+		<![CDATA[
+			Please review your entries and then save. 
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</confirm-form>
+</payment-form>

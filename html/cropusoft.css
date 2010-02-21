@@ -1,0 +1,159 @@
+body {
+	background-color: #4AA02C
+}
+
+#header {
+	width: 100%;
+	background-color: #57E964;
+	font-size:2.0em;
+}
+
+	/* Custom arrow images override background image url and width/height properties */ 
+	.yui-calendar .calnavleft { 
+	    background: url("/customimages/my12x12LeftArrow.gif") no-repeat; 
+	    width:2px; 
+	    height:2px;    
+	} 
+
+
+#map_container {
+	width: 100%;
+	background-color: #99C68E;
+}
+#map_operations {
+	background-color: #69C68E;
+}
+#signout_button {
+	position:absolute;
+	top:15px;
+	left:50%;
+}
+
+#map {
+	left:100px;
+	width: 400px; 
+	height: 420px;
+}
+
+#map_views {
+	position:absolute;
+	background-color: #12D017;
+	width:100px;
+	left:8px;
+	top:200px;
+}
+#farm_views {
+	position:absolute;
+	background-color: #12D017;
+	width:100px;
+	left:8px;
+	top:46px;
+
+}
+
+
+#applications_box {
+	position:absolute;
+	background-color: #12D017;
+	left:515px;
+	top:60px;
+}
+#accounting_box {
+	position:absolute;
+	background-color: #12D017;
+	left:770px;
+	top:60px;
+}
+
+#menu {
+	position:absolute;
+	background-color: #52D017;
+	left:660px;
+	top:270px;
+}
+#dialog {
+	background-color: #52D017;
+	width:100%;
+}
+#add_form {
+	width: 330px;
+	display:none;
+	position:absolute;
+	background-color: #CCFB5D;
+	left:100px;
+	top:50px;
+}
+#save_field_form {
+	width: 330px;
+	display:none;
+	position:absolute;
+	background-color: #CCFB5D;
+	left:100px;
+	top:50px;
+}
+
+
+
+#abc {
+
+	display:none;
+
+}
+
+
+#add_field_buttons {
+		display:none;
+		position:absolute;
+		left:515px;
+		top:270px;
+		background-color: #CCFB5D;
+}
+
+
+ul {
+	padding-left: 1.0em;
+}
+
+#please_wait {
+	display:none;
+	position:absolute;
+	left:45%;
+	top:45%;
+	width: 200px;
+	height: 200px;
+}
+
+.label_style {
+	font-size:x-small
+	}
+
+#add {
+	display: none;
+}
+#apply {
+	display: none;
+}
+#delete_fields {
+	display: none;
+}
+#save_field {
+	display: none;
+}
+#select_crop {
+	display: none;
+}
+#select_crop_form {
+	display: none;
+}
+.hide {
+	display: none;
+}
+#calendar_calendar {
+	
+}
+.calendar_item {
+	position: absolute;
+	width: 23px;
+	height: 28px;
+	background-image:url("images/push_pin.jpg");
+}

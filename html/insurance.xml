@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<insurance-form>
+	<select-fields-form>
+		<![CDATA[
+			In the filter, select farm, crop, then field.
+			<div id="selected_farm" class="hide">
+			<b>Farm</b>: <span></span>
+			</div>
+			<div id="selected_crop" class="hide">
+			<b>Crop</b>: <span></span>
+			</div>
+			<div id="selected_section" class="hide">
+			<b>Section</b>: <span></span>
+			</div>
+			<div id="submit_selection" class="hide">
+			<b>Acreage:</b> <span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+			</div>
+			
+		]]>
+	</select-fields-form>
+	<select-yield-form>
+		<![CDATA[
+		Select the 5 Year Average Yield:
+		<div id="calculated_yield">
+			<table class='three_column'></table>
+		</div>
+		<img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-yield-form>	
+	<enter-percentage-form>
+		<![CDATA[
+		Enter Insured Percentage:
+		<input class="shorter_input" type="text"></input>%
+		<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-percentage-form>
+	<enter-price-form>
+		<![CDATA[
+		Enter Price Guarantee:
+		$<input class="shorter_input" type="text"></input>
+		<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-price-form>	
+	<enter-premium-form>
+		<![CDATA[
+		Enter Premium:
+		$<input class="shorter_input" type="text">/Acre</input>
+		<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-premium-form>			
+</insurance-form>

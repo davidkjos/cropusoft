@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<storage-form>
+	<select-crop-form>
+		<![CDATA[
+			Please select the crop to be moved.
+			<br/><input type="radio" name="crop_type" value="Corn">Corn</input>
+			<br/><input type="radio" name="crop_type" value="Soybean">Soybean</input>
+			<br/><input type="radio" name="crop_type" value="Wheat">Wheat</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-crop-form>
+	<select-farm-form>
+		<![CDATA[
+			Please select the farm that owns the grain to be moved.
+			<br/><input type="radio" name="farm" value="1281">1281</input>
+			<br/><input type="radio" name="farm" value="296">296</input>
+			<br/><input type="radio" name="farm" value="904">904</input>
+			<br/><input type="radio" name="farm" value="512">512</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-farm-form>
+	<select-source-form>
+		<![CDATA[
+			Please select where grain is being moved from.
+			<br/><input type="radio" name="storage_source" value="on_farm">On Farm(up to <span></span> bushels)</input>
+			<br/><input type="radio" name="storage_source" value="OBrian">Obrian(up to <span></span> bushels)</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-source-form>
+	<select-destination-form>
+		<![CDATA[
+			Please select where grain is being moved to.
+			<br/><input type="radio" name="storage_destination" value="on_farm">On Farm</input>
+			<br/><input type="radio" name="storage_destination" value="OBrian">Obrian</input>
+			<br/><input type="radio" name="storage_destination" value="OBrian">New Entry</input><span class="hide">:<input type="text" name="new_storage"></input></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-destination-form>
+	<select-date-form>
+		<![CDATA[
+			Please select the date when grain will be moved.
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-date-form>
+	<enter-amount-form>
+		<![CDATA[
+			Please enter how many bushels will be moved<br/>
+			<input type="text" name="total"></input> Bushels<br/>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-amount-form>
+	<enter-description-form>
+		<![CDATA[
+			Please enter a description of this grain transfer for future reference. <br/>
+			 <input type="text"></input><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+			]]>
+	</enter-description-form>
+	<confirm-form>
+		<![CDATA[
+			Please review your entries and then save. 
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</confirm-form>
+</storage-form>

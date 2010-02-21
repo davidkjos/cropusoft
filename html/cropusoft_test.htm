@@ -1,0 +1,123 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Cropusoft2!</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAArCavjPe6gNOlkzbBSJBtkhSukXiSD2oWFBRfyC0RqjFX6e8RuBQuHqfUmla_Hn16fVYfmuxSAVh2og&sensor=false"
+            type="text/javascript"></script>
+    <script src="http://econym.googlepages.com/epoly.js"
+    		type="text/javascript"> </script>
+    <script src="http://econym.googlepages.com/elabel.js"
+    		type="text/javascript"> </script>
+    <script src="cropusoft_ie.js"
+    		type="text/javascript"></script>
+    <script src="jquery-1.3.2.js"
+    		type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="cropusoft.css" />
+
+  </head>
+  <body onload="initialize();" onunload="finalize();">
+    <div id="header">Cropusoft! The place for Farms!</div>
+    <div id="map_container">
+    	<div id="map"></div>
+    </div>
+	<div id="ad">
+		<img src=advertisement.gif />
+	</div>
+    <div id="map_views">
+    	Select Map:
+    	<ul>
+    		<li>
+    			<span id="saveTraill">Farm 296</span>
+				<span id="saveTownships">save townships</span>
+				<ul>
+					<li>
+						<span id="traillCounty">Traill County</span>
+				<ul>
+					<li>
+					<span id="lindaas">Lindaas Township</span>
+					<ul>
+						<li>
+							<span id="section33">Section 33</span>
+						</li>
+						<li>
+							<span id="section34">Section 34</span>
+						</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+				</ul>
+    		</li>
+    	</ul>
+    </div>
+	<div id="menu">
+		Manage Farm:
+		<ul>
+			<li>
+				Edit Insurance
+			</li>
+			<li>
+				<span id="add_seed">Add Seed</span>
+			</li>
+			<li>
+				Add Fertilizer
+			</li>
+			<li>
+				Add Chemicals
+			</li>
+			<li>
+				Estimate Yield
+			</li>
+			<li>
+				Run Report
+			</li>
+			<li>
+				Add Field
+			</li>
+			<li>
+				Edit Field
+			</li>
+			<li>
+				Delete Field
+			</li>
+			<li>
+				<span id="add_farm">Add Farm</span>
+			</li>
+			<li>
+				Change Crop
+			</li>
+		</ul>
+	</div
+	<div id="dialog">
+		Start managing your farm!
+	</div>
+	<div id="add_form">
+		Seed Brand: <select>
+				<option>Monsanto DX</option>
+				<option>Synergex 90z</option>
+				<option>Seedco H77</option>
+		</select>
+		<input type="radio" name="add_type" value="by_acre">
+		Kernals/acre</input> <input type="text"></input><br/>
+		OR<br/>
+		<input type="radio" name="add_type" value="absolute">
+		Total kernals</input> <input type="text"></input><br/>
+		Date of Application: <input type="text"></input><br/>
+		$/Kernal: <input type="text"></input><br/>
+		<span id="ok">OK</span>       <span id="cancel">Cancel</span>
+	</div>
+	<div id="add_field_buttons">
+		<span id="add_vertex">Add Vertex</span><br/>
+		<span id="remove_vertex">Remove Vertex</span><br/>
+
+		Field Name:<input type="text" id="add_field_name"></input><br/>
+		<span id="save_field" >Save Field</span>
+
+	</div>
+	<div id="please_wait">
+		<img src="please_wait.gif" />
+	</div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Cropusoft2!</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAArCavjPe6gNOlkzbBSJBtkhSukXiSD2oWFBRfyC0RqjFX6e8RuBQuHqfUmla_Hn16fVYfmuxSAVh2og&sensor=false"
+            type="text/javascript"></script>
+    <script src="http://econym.googlepages.com/epoly.js"
+    		type="text/javascript"> </script>
+    <script src="elabel.js"
+    		type="text/javascript"> </script>
+    <script src="cropusoft_2.js"
+    		type="text/javascript"></script>
+	
+    <script src="jquery-1.3.2.js"
+    		type="text/javascript"></script>
+<!--CSS file (default YUI Sam Skin) --> 
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/calendar/assets/skins/sam/calendar.css"> 
+	 
+	<!-- Dependencies --> 
+	<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+	 
+	<!-- Source file --> 
+	<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/calendar/calendar-min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="cropusoft.css" />
+
+			
+
+
+  </head>
+  <body onload="init();" onunload="finalize();" class="yui-skin-sam">
+    <div id="header">Cropusoft! The place for Farms!</div>
+    <div id="map_container">
+    	<div id="map"></div>
+    </div>
+	<div id="ad">
+		<img src=advertisement.gif />
+	</div>
+    <div id="map_views"></div>
+	<div id="stats">
+		No Fields Selected
+	</div>	
+	<div id="applications_box">
+		No Applications
+	</div>
+	<div id="dialog">
+		<div id="message">Please Wait....</div>
+		<div id="map_operations">
+			<div id="done">DONE</div>
+			<div id="cancel">CANCEL</div>
+			<div id="add">ADD FIELD/FARM</div>
+			<div id="apply">APPLY FERTILIZER/SEED/CHEMICAL</div>
+			<div id="delete">DELETE FIELDS</div>
+			<div id="select_crop">SELECT CROP</div>
+			<div id="save_field">
+				Field Name: <input type="text" id="new_field_name"></input><br/>
+				New Farm Number: <input type="text" id="new_farm_number"></input><br/>
+				<span id="save_field_ok">OK</span><br/>       
+				<span id="save_field_cancel">Cancel</span>
+			</div>
+			<div id="select_crop_form">
+				Select Crop:
+				<input type="radio" name="crop_type" id="crop_type" value="soybean">Soybean</input>
+				<input type="radio" name="crop_type" id="crop_type" value="corn">Corn</input> 
+				<input type="radio" name="crop_type" id="crop_type" value="wheat">Wheat</input><br/>
+				<span id="select_crop_confirm">OK</span>      
+				<span id="select_crop_cancel">Cancel</span>
+			</div>
+		</div>
+	</div>
+	<div id="add_form">
+		adsfadsfasdfadsf</div>	
+	<div id="add_form2">
+		<div id="add_confirm">
+		On <span id="app_date"></span>, The following will be applied on <span id="total_acres"></span> acres of <span id="crop"></span>  at $<span id="app_cost"></span>:
+		<br/><br/>
+		<div id="app_items"></div>
+		<span id="add_to_app">Add more ingrediants to application</span><br/>
+		<span id="save_app">Save this entry</span><br/>
+		<span id="cancel">Cancel</span><br/>
+		</div>
+		
+		
+		<div id="app_form_header">This application will apply to: <div id="form_field_list"></div> for a total of <div id="form_total_acres"></div></div>
+		<div id="app_date_step">Date of Application (dd/mm/yy):<input type="text" id="app_date_input"></input><br/></div>
+		<div id="app_type_options_step">
+		Type: <input type="radio" name="app_type" value="seed">Seed</input>
+			<input type="radio" name="app_type" value="fertilizer">Fertilizer</input> 
+			<input type="radio" name="app_type" value="chemical">Chemical</input><br/>
+		</div>
+		<div id="app_product_step">
+			Product: <div id="product_select"></div>
+		</div>
+		<div id="app_amount_step">
+			Amount: <input type="text" id="app_amount_input"></input> <span id="app_units1"></span>/acre
+		</div>
+		<div id="app_product_price_step">
+			Price: $<input type="text" id="app_price_input"></input>/<span id="app_units2"></span></span>
+		</div>
+		<div id="app_confirm_step">
+		</div>
+		<span id="app_next_button" >Next</span> <span id="app_cancel_button" >Cancel</span> 
+	</div>
+	
+	
+	
+	<div id="add_field_buttons">
+		<span id="add_vertex">Add Vertex</span><br/>
+		<span id="remove_vertex">Remove Vertex</span><br/>
+
+		Field Name:<input type="text" id="add_field_name"></input><br/>
+		<span id="save_field" >Save Field</span>
+
+	</div>
+	<div id="please_wait">
+		<img src="please_wait.gif" />
+	</div>
+  </body>
+</html>

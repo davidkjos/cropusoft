@@ -1,0 +1,492 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Cropusoft3!</title>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAArCavjPe6gNOlkzbBSJBtkhSukXiSD2oWFBRfyC0RqjFX6e8RuBQuHqfUmla_Hn16fVYfmuxSAVh2og&sensor=false"
+            type="text/javascript"></script>
+    <script src="setup.js" type="text/javascript"></script>
+	<script src="utility.js" type="text/javascript"></script>
+	<script src="buttons.js" type="text/javascript"></script>
+	<script src="map.js" type="text/javascript"></script>
+	<script src="field.js" type="text/javascript"></script>
+	<script src="filter.js" type="text/javascript"></script>
+	<script src="entities.js" type="text/javascript"></script>
+	<script src="cache.js" type="text/javascript"></script>
+	<script src="home.js" type="text/javascript"></script>
+	<script src="plant.js" type="text/javascript"></script>
+	<script src="editmap.js" type="text/javascript"></script>
+	<script src="purchase.js" type="text/javascript"></script>
+	<script src="calendar.js" type="text/javascript"></script>
+	<script src="accounting.js" type="text/javascript"></script>
+	<script src="rounded.js" type="text/javascript"></script>
+    <script src="jquery-1.3.2.js" type="text/javascript"></script>		
+	<script src="jquery.delay.js" type="text/javascript"> </script>
+	<script src="elabel.js" type="text/javascript"> </script>
+	<link rel="stylesheet" type="text/css" href="cropusoft_3.css" />
+  </head>
+  
+  <body onload="setup();">
+  	<div id="page">
+    <div id="header">
+    		<div class="default_box">
+    			<div class="inner_default">
+    				Cropusoft!!
+    			</div>
+				<div id="dialog_box">
+					Welcome to Cropusoft!  Please Select an operation.
+				</div>
+				<div id="button_box"></div>
+			</div>
+    </div>
+	<div id="columns">
+	<div id="map_column">
+		<div id="main_form_inner" class="default_box">
+			<div class="inner_default box_title" >Main Form</div>
+			<div id="form_info" class="small_font hide"></div>
+			<div id="form_box" class="small_font">Form stuff goes here......</div>
+		</div>
+    	<div id="map_column_inner" class="default_box">
+    		<div class="inner_default box_title" >Map</div>
+    		<div class="inner_default">
+    		<div id="map_box_map"></div>
+			<div id="window_under_map" class="inner_default box_title" >Filter by Farm, Section, and Crop</div>
+			
+			</div><!-- <div class="inner_default"> -->
+    </div><!-- <div id="map_column_inner" class="default_box"> -->
+	
+  </div>
+	<div id="calendar_column">
+		<div id="purchase_form_inner" class="default_box hide">
+			<div class="inner_default box_title" >
+		    		Purchase Form
+		    </div>
+			<div id="purchase_info" class="inner_default hide border_bottom small_font">
+					Purchase form is here
+			</div>
+			<div id="purchase_form" class="inner_default small_font">
+					Purchase form is here
+			</div>
+		</div>
+    	<div id="calendar_column_inner" class="default_box">
+    			<div class="inner_default box_title" >
+		    		Calendar
+		    	</div>
+    		<div class="inner_default">
+    			<div id="calendar_timeline">
+    			2009
+    			<table id="timeline_table">
+    				<tr>
+    					<td>Jan</td>
+						<td>Feb</td>
+						<td>March</td>
+						<td>April</td>
+						<td>May</td>
+						<td>June</td>
+    				</tr>
+					<tr>
+    					<td>July</td>
+						<td>August</td>
+						<td>September</td>
+						<td>October</td>
+						<td>November</td>
+						<td>December</td>
+    				</tr>
+    			</table>
+				</div>
+				
+				<div id="calendar_calendar">
+				</div>
+    		</div>
+    	</div>
+		<div id="purchase_list_inner" class="default_box">
+			<div class="inner_default box_title" >
+		    		Transactions
+		    </div>
+			<div id="purchase_list2" class="col_element inner_default small_font">
+					<table>
+						<tr>
+							<td>
+								<b>Purchases</b>
+								<br/><input type="radio" name="asd" value="asdf">All Purchases</input>
+								<br/><input type="radio" name="asd" value="asdf">9/3 Fertilizer purchase</input>
+								<br/><input type="radio" name="asd" value="asdf">1/3 Seed purchase</input>
+								<br/><input type="radio" name="asd" value="asdf">2/3 Fertilizer purchase</input>
+							</td>
+							<td class="border_left">
+								<b>Sales</b>
+								<br/><input type="radio" name="asd2" value="asdf2">All Sales</input>
+								<br/><input type="radio" name="asd2" value="asdf2">9/3 Fertilizer purchase</input>
+								<br/><input type="radio" name="asd2" value="asdf2">9/3 Fertilizer purchase</input>
+								<br/><input type="radio" name="asd2" value="asdf2">9/3 Fertilizer purchase</input>
+								<br/><input type="radio" name="asd2" value="asdf2">9/3 Fertilizer purchase</input>
+								<br/><input type="radio" name="asd2" value="asdf2">9/3 Fertilizer purchase</input>
+							</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+		<div  id="inventory_inner" class= "default_box">
+		<div class="inner_default box_title" >Havested Inventory</div>
+		<table>
+			<tr>
+				<td>
+					<b>Produce:</b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td class="border_left">
+					71,948 Bushels
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td class="border_left">
+					29,112 Bushels
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td class="border_left">
+					53,991 Bushels
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div  id="purchases_inner" class= "default_box">
+		<div class="inner_default box_title" >Purchased Inventory</div>
+		<table>
+			<tr>
+				<td>
+					<b>Fertilizer:</b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					11-52-00
+				</td>
+				<td class="border_left">
+					13,920 Gallons
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Chemical:</b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Roundup
+				</td>
+				<td class="border_left">
+					1,920 Units
+				</td>
+			</tr>
+			<tr id="wheat_tr">
+				<td>
+					<b>Wheat Seed:</b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Corn Seed:</b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					72U-89
+				</td>
+				<td class="border_left">
+					291,909 Bushels
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Soybean Seed:</b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					72U-89
+				</td>
+				<td class="border_left">
+					291,909 Bushels
+				</td>
+			</tr>
+		</table>
+	</div>
+    </div>
+	
+	
+	
+	
+	
+	<div id="accounting_column">
+		
+    	<div id="accounting_column_inner" class="default_box">
+    		<div class="inner_default box_title" >
+		    		Estimated Gross Income
+		    	</div>
+    		<div class="inner_default">
+    			<b><span>Estimated Return on unharvested crop:</span></b>
+    			<table>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td>
+					12,030 Bushels
+				</td>
+				<td>
+					$120,003.23
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td>
+					12,030 Bushels
+				</td>
+				<td>
+					$40,003.23
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td>
+					41,090 Bushels
+				</td>
+				<td class="border_bottom">
+					$10,003.23
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					$311,003.23
+				</td>
+			</tr>
+		</table>
+		<b><span>Crop Inventory at current price:</span></b>
+    			<table>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td>
+					102,999 Bushels
+				</td>
+				<td>
+					$220,003.23
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td>
+					2,030 Bushels
+				</td>
+				<td>
+					$20,003.23
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td>
+					91,090 Bushels
+				</td>
+				<td class="border_bottom">
+					$60,003.23
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					$411,003.23
+				</td>
+			</tr>
+		</table>
+<b><span>Crop Sold:</span></b>
+    			<table>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td>
+					41,999 Bushels
+				</td>
+				<td>
+					$220,003.23
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td>
+					2,030 Bushels
+				</td>
+				<td>
+					$50,003.23
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td>
+					111,090 Bushels
+				</td>
+				<td class="border_bottom">
+					$90,003.23
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					$211,003.23
+				</td>
+			</tr>
+		</table>
+<b><span>Total Value:</span></b>
+    			<table>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td>
+					102,999 Bushels
+				</td>
+				<td>
+					$220,003.23
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td>
+					2,030 Bushels
+				</td>
+				<td>
+					$20,003.23
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td>
+					91,090 Bushels
+				</td>
+				<td class="border_bottom">
+					$60,003.23
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					$1,411,003.23
+				</td>
+			</tr>
+		</table>
+			</div>
+    	</div>
+		<div id="loss_column_inner" class="default_box">
+    		<div class="inner_default box_title" >
+		    		Estimated Cost of Goods
+		    	</div>
+    		<div class="inner_default">
+    			<div id="fertilizer_cost" class="hide">
+		    			<b><span>Fertilizer:</span></b>
+		    			<table></table>
+				</div>
+		<div id="chemical_cost" class="hide">
+		<b><span>Chemical:</span></b>
+    			<table></table>
+		</div>
+		<div id="corn_seed_cost" class="hide">
+				<b><span>Corn Seed:</span></b>
+				    			<table></table>
+		</div>
+		<div id="wheat_seed_cost" class="hide">
+				<b><span>Wheat Seed:</span></b>
+				    			<table></table>
+		</div>
+		<div id="soybean_seed_cost" class="hide">
+				<b><span>Soybean Seed:</span></b>
+				    			<table></table>
+		</div>
+		<div id="total_cost" class="hide">
+<b><span>Total Cost:</span></b>
+    			<table></table>
+		</div>
+			</div>
+    	</div>
+		<div id="net_income_inner" class="default_box">
+    		<div class="inner_default box_title" >
+		    		Net Income
+		    	</div>
+    		<div class="inner_default">
+    			<table>
+			<tr>
+				<td>
+					Gross Income
+				</td>
+				<td></td>
+				<td>
+					$410,090.66
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Estimated Loss
+				</td>
+				<td></td>
+				<td class="border_bottom">
+					$110,090.31
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					$250,090.12
+				</td>
+			</tr>
+		</table>
+	
+		
+	
+			</div>
+    	</div>
+    </div>
+	</div>
+	<div id="footer">
+    	<div id="footer_inner" class="default_box">
+    		<div class="inner_default">
+    		Bottom
+			</div>
+    	</div>
+    </div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<storage-form>
+	<select-crop-form>
+		<![CDATA[
+			Please select the crop to be sold.
+			<br/><input type="radio" name="crop_type" value="corn">Corn</input>
+			<br/><input type="radio" name="crop_type" value="soybean">Soybean</input>
+			<br/><input type="radio" name="crop_type" value="wheat">Wheat</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-crop-form>
+	<select-farm-form>
+		<![CDATA[
+			Please select the farm that owns the grain to be sold.
+			<br/><input type="radio" name="farm" value="1281">1281</input>
+			<br/><input type="radio" name="farm" value="296">296</input>
+			<br/><input type="radio" name="farm" value="904">904</input>
+			<br/><input type="radio" name="farm" value="512">512</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-farm-form>
+	<select-source-form>
+		<![CDATA[
+			Please select where the grain to be sold is.
+			<br/><input type="radio" name="storage_source" value="on_farm">On Farm(up to <span id='total'></span>)</input>
+			<br/><input type="radio" name="storage_source" value="OBrian">Obrian(up to <span></span>)</input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-source-form>
+	<enter-amount-form>
+		<![CDATA[
+			Enter the total bushels to be sold.
+			<br/><input type="text" name="total"></input>Bushels (up to <span id='total'></span>)
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-amount-form>
+	<select-date-form>
+		<![CDATA[
+			Please select the sales date.
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</select-date-form>
+	<enter-price-form>
+		<![CDATA[
+			Enter the sales price.
+			<br/>$<input type="text" name="total"></input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-price-form>
+	<enter-deduction-form>
+		<![CDATA[
+			Enter the total deductions from the sales price.  (penalties, tax, etc)
+			<br/>$<input type="text" name="total"></input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-deduction-form>
+	<enter-vendor-form>
+		<![CDATA[
+			Enter the name of the purchaser.  
+			<br/><input type="radio" name="vendor" value="Clifford">Clifford</input>
+			<br/><input type="radio" name="vendor" value="OBrian">Obrian</input>
+			<br/><input type="radio" name="vendor" value="new">New Entry</input><span class="hide">:<input type="text" name="new_vendor"></input></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</enter-vendor-form>
+	<enter-description-form>
+		<![CDATA[
+			Please enter a description of this sale for future reference. 
+			 <br/><input type="text"></input>
+			 <br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+			]]>
+	</enter-description-form>
+	<confirm-form>
+		<![CDATA[
+			Please review your entries and then save. 
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="done" src="buttons/next.png" />
+		]]>
+	</confirm-form>
+</storage-form>

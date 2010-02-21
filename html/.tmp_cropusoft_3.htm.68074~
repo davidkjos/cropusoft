@@ -1,0 +1,387 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Cropusoft3!</title>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAArCavjPe6gNOlkzbBSJBtkhSukXiSD2oWFBRfyC0RqjFX6e8RuBQuHqfUmla_Hn16fVYfmuxSAVh2og&sensor=false"
+            type="text/javascript"></script>
+    <script src="setup.js" type="text/javascript"></script>
+	<script src="utility.js" type="text/javascript"></script>
+	<script src="harvest.js" type="text/javascript"></script>
+	<script src="storage.js" type="text/javascript"></script>
+	<script src="sale.js" type="text/javascript"></script>
+	<script src="payment.js" type="text/javascript"></script>
+	<script src="receipt.js" type="text/javascript"></script>
+	<script src="buttons.js" type="text/javascript"></script>
+	<script src="map.js" type="text/javascript"></script>
+	<script src="field.js" type="text/javascript"></script>
+	<script src="filter.js" type="text/javascript"></script>
+	<script src="entities.js" type="text/javascript"></script>
+	<script src="cache.js" type="text/javascript"></script>
+	<script src="home.js" type="text/javascript"></script>
+	<script src="plant.js" type="text/javascript"></script>
+	<script src="fertilize.js" type="text/javascript"></script>
+	<script src="chemical.js" type="text/javascript"></script>
+	<script src="editmap.js" type="text/javascript"></script>
+	<script src="purchase.js" type="text/javascript"></script>
+	<script src="calendar.js" type="text/javascript"></script>
+	<script src="accounting.js" type="text/javascript"></script>
+	<script src="insurance.js" type="text/javascript"></script>
+	<script src="inventory.js" type="text/javascript"></script>
+	<script src="rounded.js" type="text/javascript"></script>
+    <script src="jquery-1.3.2.js" type="text/javascript"></script>		
+	<script src="jquery.delay.js" type="text/javascript"> </script>
+	<script src="elabel.js" type="text/javascript"> </script>
+	<link rel="stylesheet" type="text/css" href="cropusoft_3.css" />
+  </head>
+  
+  <body onload="setup();">
+  	<div id="page">
+    <div id="header">
+    		<div class="default_box">
+    			<div class="inner_default">
+    				Cropusoft!!
+    			</div>
+			</div>
+    </div>
+	<div id="columns">
+	<div id="map_column">
+		<div id="main_form_inner" class="default_box">
+			<div id="form_title" class="inner_default box_title" >Main Form</div>
+			<div id="form_info" class="small_font hide"></div>
+			<div id="form_box" class="small_font">Form stuff goes here......</div>
+		</div>
+    	<div id="map_column_inner" class="default_box">
+    		<div class="inner_default box_title" >Map</div>
+    		<div class="inner_default">
+    		<div id="map_box_map"></div>
+			<div id="window_under_map" class="inner_default box_title" >Filter by Farm, Section, and Crop</div>
+			
+			</div><!-- <div class="inner_default"> -->
+    </div><!-- <div id="map_column_inner" class="default_box"> -->
+	
+  </div>
+	<div id="calendar_column">
+		<div id="purchase_form_inner" class="default_box hide">
+			<div class="inner_default box_title" >
+		    		Purchase Form
+		    </div>
+			<div id="purchase_info" class="inner_default hide border_bottom small_font">
+					Purchase form is here
+			</div>
+			<div id="purchase_form" class="inner_default small_font">
+					Purchase form is here
+			</div>
+		</div>
+    	<div id="calendar_column_inner" class="default_box">
+    			<div class="inner_default box_title" >
+		    		Calendar
+		    	</div>
+    		<div class="inner_default">
+    			<div id="calendar_timeline">
+    			2009
+    			<table id="timeline_table">
+    				<tr>
+    					<td>Jan</td>
+						<td>Feb</td>
+						<td>March</td>
+						<td>April</td>
+						<td>May</td>
+						<td>June</td>
+    				</tr>
+					<tr>
+    					<td>July</td>
+						<td>August</td>
+						<td>September</td>
+						<td>October</td>
+						<td>November</td>
+						<td>December</td>
+    				</tr>
+    			</table>
+				</div>
+				
+				<div id="calendar_calendar">
+				</div>
+    		</div>
+    	</div>
+		
+		<div  id="inventory_inner" class= "default_box">
+		<div class="inner_default box_title" >Havested Inventory</div>
+		<table id="harvested_inventory"></table>
+	</div>
+	<div  id="purchases_inner" class= "default_box">
+		<div class="inner_default box_title" >Purchased Inventory</div>
+		<table id="purchased_inventory"></table>
+	</div>
+    </div>
+	
+	
+	
+	
+	
+	<div id="accounting_column">
+		
+    	<div id="accounting_column_inner" class="default_box">
+    		<div class="inner_default box_title" >
+		    		Estimated Gross Income
+		    	</div>
+    		<div class="inner_default">
+    			<b><span>Estimated Return on unharvested crop:</span></b>
+    			<table>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td>
+					<span id="uCornBushels"></span>
+				</td>
+				<td>
+					<span id="uCornIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td>
+					<span id="uSoybeanBushels"></span>
+				</td>
+				<td>
+					<span id="uSoybeanIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td>
+					<span id="uWheatBushels"></span>
+				</td>
+				<td>
+					<span id="uWheatIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="border_top">
+					<span id="uTotal"></span>
+				</td>
+			</tr>
+		</table>
+		<b><span>Crop Inventory at current price:</span></b>
+    			<table>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td>
+					<span id="hCornBushels"></span>
+				</td>
+				<td>
+					<span id="hCornIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td>
+					<span id="hSoybeanBushels"></span>
+				</td>
+				<td>
+					<span id="hSoybeanIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td>
+					<span id="hWheatBushels"></span>
+				</td>
+				<td>
+					<span id="hWheatIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="border_top">
+					<span id="hTotal"></span>
+				</td>
+			</tr>
+		</table>
+<b><span>Crop Sold:</span></b>
+    			<table>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td>
+					<span id="sCornBushels"></span>
+				</td>
+				<td>
+					<span id="sCornIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td>
+					<span id="sSoybeanBushels"></span>
+				</td>
+				<td>
+					<span id="sSoybeanIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td>
+					<span id="sWheatBushels"></span>
+				</td>
+				<td>
+					<span id="sWheatIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="border_top">
+					<span id="sTotal"></span>
+				</td>
+			</tr>
+		</table>
+<b><span>Total Value:</span></b>
+    			<table>
+			<tr>
+				<td>
+					Corn
+				</td>
+				<td>
+					<span id="tCornBushels"></span>
+				</td>
+				<td>
+					<span id="tCornIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Soybeans
+				</td>
+				<td>
+					<span id="tSoybeanBushels"></span>
+				</td>
+				<td>
+					<span id="tSoybeanIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wheat
+				</td>
+				<td>
+					<span id="tWheatBushels"></span>
+				</td>
+				<td>
+					<span id="tWheatIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="border_top">
+					<span class="tIncome"></span>
+				</td>
+			</tr>
+		</table>
+			</div>
+    	</div>
+		<div id="loss_column_inner" class="default_box">
+    		<div class="inner_default box_title" >
+		    		Estimated Cost of Goods
+		    	</div>
+    		<div class="inner_default">
+    			<div id="fertilizer_cost" class="hide">
+		    			<b><span>Fertilizer:</span></b>
+		    			<table></table>
+				</div>
+		<div id="chemical_cost" class="hide">
+		<b><span>Chemical:</span></b>
+    			<table></table>
+		</div>
+		<div id="corn_seed_cost" class="hide">
+				<b><span>Corn Seed:</span></b>
+				    			<table></table>
+		</div>
+		<div id="wheat_seed_cost" class="hide">
+				<b><span>Wheat Seed:</span></b>
+				    			<table></table>
+		</div>
+		<div id="soybean_seed_cost" class="hide">
+				<b><span>Soybean Seed:</span></b>
+				    			<table></table>
+		</div>
+		<div id="insurance_cost" class="three_column2 hide">
+		<b><span>Insurance:</span></b>
+    			<table></table>
+		</div>
+		<div id="total_cost" class="hide">
+<b><span>Total Cost:</span></b>
+    			<table></table>
+		</div>
+			</div>
+    	</div>
+		<div id="net_income_inner" class="default_box">
+    		<div class="inner_default box_title" >
+		    		Net Income
+		    	</div>
+    		<div class="inner_default">
+    			<table>
+			<tr>
+				<td>
+					Gross Income
+				</td>
+				<td></td>
+				<td>
+					<span class="tIncome"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Estimated Loss
+				</td>
+				<td></td>
+				<td class="border_bottom">
+					<span id="tCost"></span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<span id="net"></span>
+				</td>
+			</tr>
+		</table>
+	
+		
+	
+			</div>
+    	</div>
+    </div>
+	</div>
+	<div id="footer">
+    	<div id="footer_inner" class="default_box">
+    		<div class="inner_default">
+    		Bottom
+			</div>
+    	</div>
+    </div>
+	</div>
+  </body>
+</html>

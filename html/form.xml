@@ -1,0 +1,51 @@
+<form>
+	<map-nav>
+		<![CDATA[
+		<div id="map_filter">
+				<table id="map_column_farm_link_table">
+					<tr>
+						<td>
+								<b>Farm:</b><br/>
+								<input type="radio" name="map_farm_radio" value="all_farms" checked="true">All Farms</input><br/>
+								<div id="map_farm_options"></div>
+								<div id="planting">
+								<br/><b>Crop: </b><br/>
+								<input type="radio" name='map_crop_radio' value='all'>All</input><br/>
+								<div id="map_crop_options"></div>
+						</td>
+						<td class="border_left">
+							<b>Section:</b><br/>
+							<input type="radio" name="map_section_radio" value="all_sections" checked="true">All Sections</input><br/>	
+							<div id="map_section_options"></div>
+							<b>Total: </b><span id="total_acreage"></span> Acres<br/>
+							<div class="hide">
+							</br><b>Fertilizations: </b><br/>
+							<input type="radio" name='application_option' value='1'>Non Applicable</input><br/>
+							<input type="radio" name='application_option' value='1'>All Fertilizations</input><br/>
+							<input type="radio" name='application_option' value='2'>11-5201</input><br/>
+							<input type="radio" name='application_option' value='3'>11-5201</input><br/>
+							<input type="radio" name='application_option' value='4'>11-5201</input><br/>
+							<br/><b>Sprays: </b><br/>
+								<input type="radio" name='application_option' value='1'>Non Applicable</input><br/>
+								<input type="radio" name='application_option' value='1'>All Sprays</input><br/>
+								<input type="radio" name='application_option' value='2'>11-5201</input><br/>
+								<input type="radio" name='application_option' value='2'>11-5201</input><br/>
+								<input type="radio" name='application_option' value='2'>11-5201</input><br/>
+								<input type="radio" name='application_option' value='2'>11-5201</input><br/>
+							<br/><b>Digging: </b><br/>
+								<input type="radio" name='application_option' value='1'>Non Applicable</input><br/>
+								<input type="radio" name='application_option' value='1'>All Harvesting</input><br/>
+								<input type="radio" name='application_option' value='2'>uypyup</input><br/>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div><!-- <div id="map_filter"> -->
+		]]>
+	</map-nav>
+	
+	<button-box-item>
+		<![CDATA[<img class="set_left"></img>]]>	
+	</button-box-item>	
+
+</form>

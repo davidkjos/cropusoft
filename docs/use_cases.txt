@@ -1,0 +1,40 @@
+user browses tocropusoftload map showing traill county townships with names
+			"if new user add a farm by clicking township or login"
+user clicks township	zoom in on selected township and show sections with numbers
+			"click a section where there is a farm"
+user clicks section	zoom in on selected section and show add field button
+user clicks add field	switch to hybrid map
+			"to add a single field to the farm, select a corner of the field
+			and drag the mouse to an opposite corner and release"
+user makes square	drag the vertices to where they belong or add new vertex by clickin
+			a vertex and an adjacent vertex, to delete a vertex double click it
+user clicks save	Show form with name,email,password,farm number,field number
+user confirms		form disappears, field pegs removed, name, farm# and 
+			township-section added to nav, new field button appears
+			add fertilizer, update field, delete field, 
+			add seed, plan crop
+user clicks field	window says "no info" (cancel)
+user click change crop	dialog: pick fields where crop decision is made
+user clicks field	form: year, crop type
+user confirms		form gone, field changes to associated crop color
+clicks fertilizer	dialog: "please select fields for fertilizer" (add fertilizer, cancel)
+field selected		form: date, fert name, units per acre, cost per unit, 
+			application cost per acre
+user confirms		form disappears, accounting updated
+clicks seed		dialog: "select fields for seeding" add seed, cancel
+select fields		form: date, seed name, units per acre, cost per unit, application cost/acre
+confirm			form disappears, acounting updated
+user clicks chemical	select fields
+fields selected, ok	form: date, chemical name, chem type, units/acre, $/unit, app cost/a
+			(SUBMIT, CANCEL, MORE CHEMICALS)
+user clicks more	list shows previously entered chems, show new form
+click new farm/field	show traill county with townships
+click township,section
+	add field	form: radios with existing farms or new farm option, field name
+
+
+
+
+
+
+		

@@ -1,0 +1,344 @@
+
+
+ul {
+	list-style-type: none;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#form_box table {
+	width: 100%;
+}
+#form_box * {
+	font-size:x-small;;
+}
+
+#form_box td {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width: 50%;
+	vertical-align:text-top;
+}
+
+.timeline_pin {
+	position: absolute;
+}
+.form_box_right {
+	margin-left: 30%;
+}
+
+.button_item {
+	width:25%;
+}
+body {
+	background-color: #dddddd;
+	text-align:center;
+}
+#button_box {
+	width:100%;
+	
+}
+.yellow {
+	background-color: #dddddd;
+}
+.disable {
+	font-style:italic;	
+}
+.hide {
+	display: none;
+}
+#purchase_options {
+	width: 100%;
+}
+
+#purchase_options td {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+#purchase_options td img {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+.button_column {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	
+}
+.asd {
+	height:18px;
+	border-width:2px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+.two_char_input {
+	width:17px;
+	height:13px;
+}
+.label_style {
+	font-size:x-small
+	}
+
+#page {
+	margin:0 auto;
+	width:990px; /*Without a width smaller than 100%, div is 100% in width by default and expands to the parent borders*/
+	text-align:left; /*As text-align property is automatically inherited, you need to reset it so that the texts and other elements inside div#page are not put in the center.*/
+}
+#dialog_box {
+	font-size: 0.8em;
+	color: #888888;
+	border-top: 1px solid #dddddd;
+}
+#header .inner_default {
+	width: 100%;
+	font-size: 2.5em;
+}
+#columns {
+	clear:both;
+}
+.default_box {
+	background-color: #ffffff;
+	margin: 3px; 
+}
+.inner_default {
+	padding: 3px; 
+	
+}
+.set_left {
+	float:left;
+}
+.rounded {
+	margin: 3px; 
+}
+
+.box_title {
+	border-bottom: 1px solid #dddddd;
+}
+.border_bottom {
+	border-bottom: 1px solid #dddddd;	
+}
+.border_top {
+	border-top: 1px solid #dddddd;	
+}
+#button_box {
+	border-top: 1px solid #dddddd;
+}
+
+#left_nav_body {
+	font-size: 0.8em;
+}
+#left_nav {
+	width: 10%;
+	float: left;
+}
+#timeline_table {
+	width:100%;
+}
+#timeline_table td {
+	width:16.6%;
+	font-size: 0.6em;
+	vertical-align:text-top;
+	float: left;
+	background-color: #ffffff;
+	height: 40px;
+	border-right: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;	
+}
+.calendar_table {
+	width:100%;
+}
+#map_box_map {
+	height:305px;
+}
+
+#map_draw_box {
+	height:600px;
+	width:600px;
+}
+
+#map_draw_div {
+	width:600px;
+	margin-left: auto ;
+  	margin-right: auto ;
+
+}
+
+.calendar_table td {
+	width:10%;
+	font-size: 0.6em;
+	vertical-align:text-top;
+	float: left;
+	background-color: #ffffff;
+	height: 40px;
+	border-right: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;	
+}
+
+#accounting_table {
+	width:100%;
+}
+#accounting_table td {
+	width:50%;
+	font-size: 1em;
+	vertical-align:text-top;
+	background-color: #ffffff;
+	float: left;
+}
+
+.form_table {
+	width:100%;
+	font-size: 1em;
+}
+.form_table td * {
+	width:50%;
+	font-size: 1em;
+	vertical-align:text-top;
+	background-color: #ffffff;
+	float: left;
+}
+
+loss_column_inner td {
+	width: 50%;
+}
+
+#timeline_first_line {
+	position:relative;
+}
+
+#map_filter table {
+	width: 100%;
+}
+#map_filter td {
+	vertical-align:text-top;
+	width:50%;
+}
+#map_filter {
+	font-size: 0.7em;
+}
+.col_element table {
+	width: 100%;
+}
+.col_element td {
+	vertical-align:text-top;
+	width:50%;
+}
+.col_element {
+	font-size:small;
+}
+
+
+
+
+#inventory_inner table {
+	font-size:small;
+	width: 100%;
+}
+#inventory_inner td {
+	width: 50%;
+}
+
+#accounting_column table {
+	font-size:small;
+	width: 100%;
+}
+#accounting_column td {
+	width: 33%;
+}
+#accounting_column span {
+	font-size:small;
+}
+
+
+
+#purchases_inner table {
+	font-size:small;
+	width: 100%;
+}
+#purchases_inner td {
+	width: 50%;
+}
+
+.border_left {
+	border-left: 1px solid #dddddd;
+}
+
+.farm_nav_item {
+
+	font-size:small;
+	padding:4px;
+}
+
+#map_column {
+	width: 33.3%;
+	float: left;
+}
+
+#calendar_column {
+	width: 33.3%;
+	float: left;
+}
+
+#accounting_column {
+	width: 33.3%;
+	float: left;
+}
+
+#footer {
+	width: 100%;
+	clear: both;
+}
+.shortest_input {
+	width: 20px;
+}
+.shorter_input {
+	width: 40px;
+}
+.short_input {
+	width: 60px;
+}
+.import_form {
+	font-size: medium;
+}
+.import_form input {
+	height: 14px;
+	font-size:inherit; 
+}
+.import_form select {
+
+}
+.white {
+	font-size:x-small;
+	color: white;
+	margin-left:10%;
+}
+.small_font {
+	font-size: .9em;
+}
+.calendar_item {
+	position: absolute;
+	width: 23px;
+	height: 28px;
+}
+#calendar_calendar {
+	position: relative;
+}
+.red {
+	color: red;
+}
+#total_acres_tr {
+	
+}
+
+#form_info {
+	border-bottom: 1px solid #dddddd;	
+	font-size: .9em;
+	width: 100%;
+}
+.three_column {
+	width: 100%;
+}
+.three_column td {
+	width: 33%;
+	font-size:small;
+}
+.three_column2 td {
+	width: 33%;
+}

@@ -1,0 +1,87 @@
+<purchase-forms>
+	<purchase-list>
+		<![CDATA[
+		Purchases: 
+		<br/>
+		<table id="purchase_options"></table>
+		<img id="next" src="buttons/add.png" />
+		]]>
+	</purchase-list>
+	<vendor-form>
+		<![CDATA[
+			Vendor Name: <input type="text" id="vendor_input"></input>
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="next" src="buttons/next.png" />
+		]]>
+	</vendor-form>
+	<product-type-form>
+		<![CDATA[
+			Product Type: 
+			</br>
+			<input type="radio" name="purchase_type" value="corn_seed">Corn Seed</input>
+			<input type="radio" name="purchase_type" value="wheat_seed">Wheat Seed</input>
+			<input type="radio" name="purchase_type" value="soybean_seed">Soybean Seed</input>
+			</br>
+			<input type="radio" name="purchase_type" value="fertilizer">Fertilizer</input>
+			<input type="radio" name="purchase_type" value="chemical">Chemical</input>
+			<input type="radio" name="purchase_type" value="treatment">Seed Treatment</input>
+					
+			<img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="next" src="buttons/next.png" />
+		]]>
+	</product-type-form>
+	<product-name-form>
+		<![CDATA[
+			<span id='options'></span>
+			Units: <input type="text" id="conversion"></input> Kernals per <select><option value='Lb'>Lb</option><option value='Bag'>Bag</option></select><br/>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="next" src="buttons/next.png" />
+		]]>
+	</product-name-form>	
+	<product-amount-form>
+		<![CDATA[
+			Amount: <input type="text" id="vendor_input"></input><select><option value='Gallons'>Gallons</option><option>Tons</option><option>Ounces</option><option>Pints</option><option>Bags (80K Kernals)</option><option>50 Lb Units</option></select>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="next" src="buttons/next.png" />
+		]]>
+	</product-amount-form>
+	<product-price-form>
+		<![CDATA[
+			Price: <input type="text" id="vendor_input"></input> Per <span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="next" src="buttons/next.png" />
+		]]>
+	</product-price-form>
+	<product-summary-form>
+		<![CDATA[
+			Look at purchases here....
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="add" src="buttons/jedit.png" /><img id="done" src="buttons/next.png" />
+		]]>
+	</product-summary-form>
+	<receive-date-form>
+		<![CDATA[
+			Click on thw day when you will be recieving the goods.
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="next" src="buttons/next.png" />
+		]]>
+	</receive-date-form>
+	<payment-date-form>
+		<![CDATA[
+			Click on the day on the calendar when you will be paying for the goods.
+			<span></span>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="next" src="buttons/next.png" />
+		]]>
+	</payment-date-form>
+	<purchase-name-form>
+		<![CDATA[
+			Enter a description of the purchase. <input type="text"></input>
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="next" src="buttons/next.png" />
+		]]>
+	</purchase-name-form>
+	<purchase-percentages-form>
+		<![CDATA[
+			Enter Percentages
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="next" src="buttons/next.png" />
+		]]>
+	</purchase-percentages-form>
+	<final-summary>
+		<![CDATA[
+			Please review information above and then save.
+			<br/><img id="cancel" src="buttons/cancel.png" onclick="currentManager.handleCancel()"><img id="back" src="buttons/jedit.png" /><img id="next" src="buttons/next.png" />
+		]]>
+	</final-summary>
+</purchase-forms>

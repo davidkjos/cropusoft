@@ -1,0 +1,19 @@
+<h1>Cropusoft!!!!</h1>
+
+<div id='login_div'>
+<h2>Login..</h2>
+<b>Email:</b> <input type='text' id='email_input'></input> <b>Password:</b> <input class='short_input' type='password_input' id='password_input'></input>  <img id='login_button' src='buttons/plant.png' />
+<br/><br/>
+<h2>OR</h2>
+<h2>Try out Cropusoft Now!</h2>
+<b>Section:</b> (eg N52-W33-S12) N<input class='shortest_input' maxlength='3' type='text' id='n_input'></input>-W<input class='shortest_input' maxlength='3' type='text' id='w_input'></input>-<input class='shortest_input' maxlength='2' type='text' id='s_input'></input>  <img id='try_button' src='buttons/plant.png' />
+</div>
+
+<div id="map_draw_div" class="hide">
+    	
+    		<div class="inner_default box_title" >Map</div>
+    		<div class="inner_default">
+    		<div id="map_draw_box"></div>
+
+    </div><!-- <div id="map_column_inner" class="default_box"> -->
+
