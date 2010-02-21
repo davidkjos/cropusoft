@@ -1,0 +1,4 @@
+
+- UPDATE REPOSITORY
+git pull
+
