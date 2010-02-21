@@ -2,3 +2,10 @@
 - UPDATE REPOSITORY
 git pull
 
+- MAKE CHANGES
+git add . (to add all files/changes to commit)
+git add <file_path> (to add individual files to commit)
+git commit -m 'commit comment'
+
+- PUBLISH CHANGES TO MASTER
+git push origin master
